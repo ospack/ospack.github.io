@@ -1,0 +1,86 @@
+---
+layout: base
+---
+{%- assign analytics_path = page.dir | split: "/" -%}
+{%- assign analytics_path = analytics_path[1] -%}
+{%- assign analytics_data = site.data[analytics_path][page.category][page.days] -%}
+<h2>{{ page.category_pretty }} Events ({{ page.days | split: "d" | first }} days)</h2>
+
+<h3><a href="{{ site.baseurl }}/api/{{ analytics_path }}/{{ page.category }}/{{ page.days }}.json"><code>/api/{{ analytics_path }}/{{ page.category }}/{{ page.days }}.json</code> (JSON API)</a></h3>
+
+<h4>Start Date: {{ analytics_data.start_date }}</h4>
+<h4>Total Events: {{ analytics_data.total_count }}</h4>
+
+<table class="full-width">
+    <tr>
+        <th></th>
+        <th>
+{%- case page.category -%}
+    {%- when "os-version" -%}
+            Version
+    {%- when "ospack-devcmdrun-developer" -%}
+            Configuration
+    {%- when "ospack-os-arch-ci" -%}
+            Setup
+    {%- when "ospack-prefixes" -%}
+            Prefix
+    {%- when "ospack-versions" -%}
+            Version
+    {%- when "ospack-command-run" -%}
+            Command
+    {%- when "ospack-command-run-options" -%}
+            Command
+    {%- when "ospack-test-bot-test" -%}
+            Command
+    {%- when "cask-install" -%}
+            Cask
+    {%- else -%}
+            Formula
+{%- endcase -%}
+        </th>
+        <th>Events</th>
+        <th>%</th>
+    </tr>
+{%- for item in analytics_data.items -%}
+    <tr>
+        <td class="number-data">#{{ item.number }}</td>
+        <td>
+    {%- if page.category == "os-version" -%}
+            <code>{{ item.os_version | escape }}</code>
+    {%- elsif page.category == "ospack-devcmdrun-developer" -%}
+            <code>{{ item.devcmdrun_developer | escape }}</code>
+    {%- elsif page.category == "ospack-os-arch-ci" -%}
+            <code>{{ item.os_arch_ci | escape }}</code>
+    {%- elsif page.category == "ospack-prefixes" -%}
+            <code>{{ item.prefix | escape }}</code>
+    {%- elsif page.category == "ospack-command-run" -%}
+            <code>{{ item.command_run | escape }}</code>
+    {%- elsif page.category == "ospack-command-run-options" -%}
+            <code>{{ item.command_run_options | escape }}</code>
+    {%- elsif page.category == "ospack-test-bot-test" -%}
+            <code>{{ item.test_bot_test | escape }}</code>
+    {%- elsif page.category == "ospack-versions" -%}
+            <code>{{ item.version | escape }}</code>
+    {%- elsif page.category == "cask-install" -%}
+        {%- assign data_name = item.cask | remove: "@" | remove: "." | replace: "+", "_" -%}
+        {%- if site.data.cask[data_name] != nil -%}
+            <a href="{{ site.baseurl }}/cask/{{ item.cask | uri_escape }}"><code>{{ item.cask | escape }}</code></a>
+        {%- else -%}
+            <code>{{ item.cask | escape }}</code>
+        {%- endif -%}
+    {%- else -%}
+        {%- assign full_name = item.formula | split: " " | first -%}
+        {%- assign data_name = full_name | remove: "@" | remove: "." | replace: "+", "_" -%}
+        {%- assign formula = site.data.formula[data_name] -%}
+        {%- if full_name == formula.name -%}
+            <a href="{{ site.baseurl }}/formula/{{ full_name | uri_escape }}"><code>{{ item.formula | escape }}</code></a>
+        {%- else -%}
+            <code>{{ item.formula | escape }}</code>
+        {%- endif -%}
+    {%- endif -%}
+        </td>
+        <td class="number-data">{{ item.count }}</td>
+        <td class="number-data">{{ item.percent }}%</td>
+    </tr>
+{%- endfor %}
+</table>

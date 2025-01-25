@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+
+contact_links:
+- name: New issue on Ospack/ospack-core
+  url: https://github.com/Ospack/ospack-core/issues/new/choose
+  about: Issue with the contents of a formula page? Report it to Ospack/ospack-core (the core tap/repository).
+- name: New issue on Ospack/ospack-cask
+  url: https://github.com/Ospack/ospack-cask/issues/new/choose
+  about: Issue with the contents of a cask page? Report it to Ospack/ospack-cask (the cask tap/repository).

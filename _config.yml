@@ -1,49 +1,91 @@
-title: Ospack
-description: The Missing Package Manager for macOS (or Linux).
+title: Ospack Formulae
+description: Ospack's package index
+
+remote_theme: Ospack/ospack.sh
 
 exclude:
   - bin
+  - script
   - CNAME
-  - Gemfile*
+  - LICENSE.txt
   - Rakefile
   - README.md
+  - Gemfile*
   - vendor
+  - docs/.ruby-version
+  - docs/Gemfile*
 
 plugins:
-  - jekyll-feed
   - jekyll-redirect-from
   - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
 
-feed:
-  path: atom.xml
-
 permalink: :title
 
 defaults:
   - scope:
-      type: posts
-    values:
-      layout: post
-      permalink: :year/:month/:day/:title/
-  - scope:
       path: ""
     values:
-      image: /assets/img/ospack-social-card.png
+      image: /assets/img/ospack-256x256.png
+      search_name: Ospack Formulae
+      search_site: formulae
+
+taps:
+  core:
+    repository: core
+    name: Ospack/core
+    fullname: Ospack/ospack-core
+    remote: https://github.com/Ospack/ospack-core
+  cask:
+    repository: cask
+    name: Ospack/cask
+    fullname: Ospack/ospack-cask
+    remote: https://github.com/Ospack/ospack-cask
+
+analytics:
+  intervals:
+    - name: 30 days
+      path: 30d
+    - name: 90 days
+      path: 90d
+    - name: 365 days
+      path: 365d
+  categories:
+    formulae:
+      - name: Installs
+        path: install
+      - name: Installs on Request
+        path: install-on-request
+      - name: Build Errors
+        path: build-error
+
+# sync with Library/Ospack/deprecate_disable.rb
+reasons:
+  formula:
+    does_not_build: "does not build"
+    no_license: "has no license"
+    repo_archived: "has an archived upstream repository"
+    repo_removed: "has a removed upstream repository"
+    unmaintained: "is not maintained upstream"
+    unsupported: "is not supported upstream"
+    deprecated_upstream: "is deprecated upstream"
+    versioned_formula: "is a versioned formula"
+    checksum_mismatch: "was built with an initially released source file that had a different checksum than the current one"
+  cask:
+    discontinued: "is discontinued upstream"
+    moved_to_mas: "is now exclusively distributed on the Mac App Store"
+    no_longer_available: "is no longer available upstream"
+    no_longer_meets_criteria: "no longer meets the criteria for acceptable casks"
+    unmaintained: "is not maintained upstream"
+    unsigned: "is unsigned or does not meet signature requirements"
 
 logo: /assets/img/ospack.svg
 
-github:
-  repository_nwo: Ospack/ospack.github.io
-
-forkme_nwo: Ospack/ospack
+forkme_nwo: Ospack/ospack.github.io
 
 twitter:
   username: MacOspack
 
 facebook:
   publisher: https://www.facebook.com/macospack/
-
-link_rel_me_urls:
-  - https://fosstodon.org/@ospack

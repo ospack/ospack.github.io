@@ -1,0 +1,20 @@
+# This file is synced from `Ospack/ospack` by the `.github` repository, do not modify it directly.
+---
+inherit_from: "../.rubocop.yml"
+AllCops:
+  Exclude:
+  - "**/_site/**/*"
+  - "**/Manpage.md"
+  - "**/vendor/**/*"
+Layout/LineLength:
+  Exclude:
+  - "**/Bottles.md"
+Lint/ConstantDefinitionInBlock:
+  Enabled: false
+Style/RedundantRegexpArgument:
+  Enabled: false
+Style/TopLevelMethodDefinition:
+  Enabled: false
+Lint/NonAtomicFileOperation:
+  Enabled: false
+

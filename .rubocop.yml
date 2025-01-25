@@ -151,7 +151,7 @@ Style/FrozenStringLiteralComment:
   - "**/{Formula,Casks}/**/*.rb"
   - Ospack/test/**/Casks/**/*.rb
   - "**/*.rbi"
-  - "**/Brewfile"
+  - "**/Ospackfile"
 Style/GuardClause:
   Exclude:
   - Taps/*/*/*.rb
@@ -179,7 +179,7 @@ Style/NumericLiterals:
   MinDigits: 7
   Strict: true
   Exclude:
-  - "**/Brewfile"
+  - "**/Ospackfile"
 Style/OpenStructUse:
   Exclude:
   - Taps/**/*

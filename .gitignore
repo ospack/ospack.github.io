@@ -5,4 +5,16 @@ bin/
 vendor/
 .jekyll-metadata
 .sass-cache/
-Gemfile.lock
+_data/
+_includes/api-samples/
+api/*_tap_migrations.json
+api/analytics/
+api/cask-source/
+api/cask/
+api/formula/
+api/internal/
+docs/_includes/api-samples/
+docs/tmp/
+docs/Gemfile.lock
+cask/
+formula/

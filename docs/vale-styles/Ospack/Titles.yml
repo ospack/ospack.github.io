@@ -1,0 +1,13 @@
+extends: capitalization
+message: "'%s' should be in title case"
+level: error
+scope: heading.h1
+match: $title
+style: AP
+exceptions:
+  - ospack(1)
+  - macOS
+  - Ospack/ospack
+  - Ospack/ospack-core
+  - Ospack/ospack-cask
+  - (or Linux)

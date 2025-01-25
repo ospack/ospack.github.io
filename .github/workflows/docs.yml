@@ -1,0 +1,77 @@
+name: Documentation CI
+
+on:
+  pull_request:
+  merge_group:
+
+permissions:
+  contents: read
+  pages: read
+
+env:
+  OSPACK_DEVELOPER: 1
+  OSPACK_NO_AUTO_UPDATE: 1
+  OSPACK_NO_ENV_HINTS: 1
+  OSPACK_BOOTSNAP: 1
+  OSPACK_NO_INSTALL_CLEANUP: 1
+
+defaults:
+  run:
+    shell: bash -xeuo pipefail {0}
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Ospack
+        id: set-up-ospack
+        uses: Ospack/actions/setup-ospack@master
+        with:
+          core: false
+          cask: false
+          test-bot: false
+
+      - name: Checkout repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+
+      - name: Install vale
+        run: ospack install vale
+
+      - name: Cleanup Ospack/ospack docs
+        if: github.repository == 'Ospack/ospack'
+        run: |
+          # Avoid failing on broken symlinks.
+          rm Library/Ospack/os/mac/pkgconfig/fuse/fuse.pc
+          rm Library/Ospack/os/mac/pkgconfig/fuse/osxfuse.pc
+
+          # No ignore support (https://github.com/errata-ai/vale/issues/131).
+          rm -r Library/Ospack/vendor
+
+      - name: Run Vale
+        run: vale docs/
+
+      - name: Install Ruby
+        uses: ruby/setup-ruby@28c4deda893d5a96a6b2d958c5b47fc18d65c9d3 # v1.213.0
+        with:
+          bundler-cache: true
+          working-directory: docs
+
+      - name: Check Markdown syntax
+        working-directory: docs
+        run: bundle exec rake lint
+
+      - name: Check code blocks conform to our Ruby style guide
+        run: ospack style docs
+
+      - name: Generate ospack.github.io API samples
+        if: github.repository == 'Ospack/ospack.github.io'
+        working-directory: docs
+        run: ../script/generate-api-samples.rb
+
+      - name: Build the site and check for broken links
+        working-directory: docs
+        run: bundle exec rake test
+        env:
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
