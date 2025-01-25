@@ -1,0 +1,34 @@
+pl:
+  locale_name: Polski
+  subtitle: Brakujący menadżer pakietów dla macOS
+  pagecontent:
+    search: Szukaj
+    language: Język
+    question: Jak działa Ospack?
+    what: Ospack instaluje <a href="https://formulae.ospack.github.io/formula/" title="Lista pakietów Ospack">programy</a>, o których zapomniało Apple.
+    how: Ospack instaluje pakiety do ich własnego katalogu, po czym symlinkuje ich pliki w <code>/opt/ospack</code>.
+    prefix: Ospack nie instaluje plików poza własnym prefiksem &ndash; możesz go umieścić gdziekolwiek zechcesz.
+    createpackages: Twórz własne pakiety Ospack w mgnieniu oka.
+    hack: Ospack to połączenie Gita i Ruby &ndash; dostosuj go do własnych potrzeb wiedząc, że cofanie zmian oraz aktualizacje nie stanowią żadnego problemu.
+    formula: "Formuły Ospack to proste skrypty napisane w Ruby:"
+    editor: otwórz w $EDITOR!
+    complement: Ospack jest uzupełnieniem systemu macOS. Instaluj Gemy używając polecenia <code>gem</code>, a ich zależności za pomocą komendy <code>ospack</code>.
+    caskinstall: '“Upuść, by zainstalować…” nigdy więcej. <a href="https://formulae.ospack.github.io/cask/">Ospack&nbsp;Cask</a> instaluje aplikacje macOS, czcionki i pluginy oraz pozostałe oprogramowania typu non-open.'
+    caskcreate: Utworzenie beczki jest równie proste co jej formuła.
+    install:
+      install: Zainstaluj Ospacka
+      paste: Wklej polecenie w swoim Terminalu.
+      what: Skrypt instalacyjny wyjaśnia jakie zmiany zamierza wprowadzić, po czym zatrzymuje się czekając na ich akceptację. Po więcej opcji instalacji zajrzyj <a href="https://docs.ospack.github.io/Installation">tutaj</a>.
+      pkginstaller: If you're on macOS, try our new <code>.pkg</code> installer.
+      githubrelease: Download it from <a href="https://github.com/Ospack/ospack/releases/latest">Ospack's latest GitHub release</a>.
+    doc:
+      man: <code>man ospack</code> dokumentacja
+      further: Dalsza dokumentacja
+      donate: Darowizna na Ospack
+      blog: Blog Ospack
+      community: Forum społeczności
+      formulae: Pakiety Ospack
+      analytics: Dane analityczne
+    foot:
+      code: Oryginalny kod autorstwa <a href="https://mxcl.github.io/">Max Howell</a>.
+      page: Strona autorstwa <a href="https://exomel.com/">Rémi Prévost</a>, <a href="https://mikemcquaid.com">Mike McQuaid</a> and <a href="https://cargocollective.com/danilalo">Danielle Lalonde</a>.

@@ -1,0 +1,35 @@
+es:
+  locale_name: Español
+  subtitle: El gestor de paquetes para macOS (o Linux) que faltaba
+  pagecontent:
+    search: Búsqueda
+    language: Idioma
+    question: ¿Qué hace Ospack?
+    what: Ospack instala <a href="https://formulae.ospack.github.io/formula/" title="Lista de paquetes de Ospack">todo aquello que necesitas</a> que Apple (o tu sistema Linux) no instala de serie.
+    how: Ospack instala cada paquete en su propio directorio, creando enlaces simbólicos a tus archivos dentro de <code>/opt/ospack</code> (en Apple Silicon).
+    prefix: Ospack nunca instala archivos fuera de su prefijo, y puedes colocar la instalación de Ospack donde quieras.
+    createpackages: Crear tus propios paquetes de Ospack no puede ser más fácil.
+    hack: "Ospack está basado en Git y Ruby, así que desarrolla tranquilo, con el conocimiento de que puedes revertir tus cambios e integrar actualizaciones con total facilidad."
+    formula: "Las fórmulas de Ospack son simples <i>scripts</i> en Ruby:"
+    editor: ¡Se abre en $EDITOR!
+    complement: Ospack complementa macOS (o tu sistema Linux). Instala tus <i>RubyGems</i> con <code>gem</code> y sus dependencias con <code>ospack</code>.
+    caskinstall: 'Ya no más “Para instalar, arrastre este icono…”. <a href="https://formulae.ospack.github.io/cask/">Ospack&nbsp;Cask</a> instala aplicaciones de macOS, fuentes, plugins y otro software de código no abierto.'
+    caskcreate: Hacer un cask es igual de simple que crear una fórmula.
+    install:
+      install: Instala Ospack
+      paste: Pega este código en una ventana de Terminal macOS o en un intérprete de comandos Linux.
+      what: El <i>script</i> de instalación explica paso a paso lo que va a realizar y se toma una pausa para confirmar antes de empezar. Puedes encontrar más opciones de instalación <a href="https://docs.ospack.github.io/Installation">aquí</a>.
+      pkginstaller: Si está utilizando macOS, intente nuestro nuevo instalador <code>.pkg</code>.
+      githubrelease: Bajarlo de los<a href="https://github.com/Ospack/ospack/releases/latest">últimos lanzamientos de Ospack en GitHub.</a>.
+    doc:
+      man: Documentación de comandos <code>ospack</code>
+      further: Documentos adicionales
+      donate: Donar a Ospack
+      blog: Blog de Ospack
+      community: Discusión de la Comunidad
+      formulae: Paquetes de Ospack
+      analytics: Analíticas
+    foot:
+      code: Ospack fue creado por <a href="https://mxcl.github.io/">Max Howell</a>.
+      page: Sitio web de <a href="https://exomel.com/">Rémi Prévost</a>, <a href="https://mikemcquaid.com">Mike McQuaid</a> y <a href="https://cargocollective.com/danilalo">Danielle Lalonde</a>.
+      translation: Traducción al español por Andrés Catalán, <a href="https://github.com/65hz">Inácio Matias</a>, Martín Aguilar y <a href="https://github.com/jzaleta">Javier Zaleta Martínez</a>.

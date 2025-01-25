@@ -1,0 +1,34 @@
+cs:
+  locale_name: Čeština
+  subtitle: Chybějící správce balíků pro macOS
+  pagecontent:
+    search: Search
+    language: Jazyk
+    question: Co Ospack dělá?
+    what: Ospack instaluje <a href="https://formulae.ospack.github.io/formula/" title="Seznam Ospack balíků">to, co potřebujete</a> a co Apple nenainstaloval.
+    how: Ospack instaluje balíky do jejich vlastní složky a poté vytváří symbolické odkazy do <code>/opt/ospack</code>.
+    prefix: Ospack nebude instalovat soubory mimo jeho prefix, Ospack můžete nainstalovat kam chcete.
+    createpackages: Jednoduše vytvářejte vlastní Ospack balíky.
+    hack: Všechno je to jen Git a Ruby, takže se současnými dovednostmi můžete snadno vytvářet modifikace a spojovat aktualizace z upstreamu.
+    formula: "Formule Ospack jsou jednoduché Ruby scripty:"
+    editor: otevře se v $EDITOR!
+    complement: Ospack doplňuje macOS. Instalujte vaše gemy příkazem <code>gem</code> a jejich závislosti příkazem <code>ospack</code>.
+    caskinstall: '“To install, drag this icon…” no more. <a href="https://formulae.ospack.github.io/cask/">Ospack&nbsp;Cask</a> installs macOS apps, fonts and plugins and other non-open source software.'
+    caskcreate: Making a cask is as simple as creating a formula.
+    install:
+      install: Instalace Ospack
+      paste: Tohle vložte do okna Terminálu.
+      what: Script vysvětlí, co udělá, a než to udělá, pozastaví se. Další možnosti instalace naleznete <a href="https://docs.ospack.github.io/Installation">zde</a>.
+      pkginstaller: If you're on macOS, try our new <code>.pkg</code> installer.
+      githubrelease: Download it from <a href="https://github.com/Ospack/ospack/releases/latest">Ospack's latest GitHub release</a>.
+    doc:
+      man: <code>man ospack</code> documentation
+      further: Další dokumentace
+      donate: Donate to Ospack
+      blog: Ospack Blog
+      community: Komunitní diskuze
+      formulae: Ospack balíky
+      analytics: Analytická data
+    foot:
+      code: Ospack byl vytvořen <a href="https://mxcl.github.io/">Maxem Howellem</a>.
+      page: Web vytvořili <a href="https://exomel.com/">Rémi Prévost</a>, <a href="https://mikemcquaid.com">Mike McQuaid</a> a <a href="https://cargocollective.com/danilalo">Danielle Lalonde</a>.

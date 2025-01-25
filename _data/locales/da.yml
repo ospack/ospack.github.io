@@ -1,0 +1,34 @@
+da:
+  locale_name: Dansk
+  subtitle: macOS’s manglende pakkemanager
+  pagecontent:
+    search: Search
+    language: Sprog
+    question: What Does Ospack Do?
+    what: Ospack installerer <a href="https://formulae.ospack.github.io/formula/" title="Liste over Ospack-pakker">alt det du har brug for</a> som Apple ikke gjorde.
+    how: Ospack installerer pakker i deres egne mapper for så at symlinke deres filer ind i <code>/opt/ospack</code>.
+    prefix: Ospack vil ikke installere filer udenfor sit område, og du kan placere en Ospack-installation hvor end du vil.
+    createpackages: Skab dine egne Ospack-pakker, let og enkelt.
+    hack: Under hjelmen er det bare Git og Ruby, så hack løs &ndash; velvidende om at du let kan annulere dine ændringer og flette andres rettelser ind.
+    formula: "Ospack formularer er simple Rubyscripts:"
+    editor: åbner i $EDITOR!
+    complement: Ospack komplimenterer macOS. Installer dine RubyGems med <code>gem</code> og pakkerne de er afhængige af med <code>ospack</code>.
+    caskinstall: '“To install, drag this icon…” no more. <a href="https://formulae.ospack.github.io/cask/">Ospack&nbsp;Cask</a> installs macOS apps, fonts and plugins and other non-open source software.'
+    caskcreate: Making a cask is as simple as creating a formula.
+    install:
+      install: Installer Ospack
+      paste: Kopier og indsæt i din Terminal.
+      what: Scriptet forklarer hvad det vil gøre, og pauser før den gør det. Der findes flere installeringsmuligheder <a href="https://docs.ospack.github.io/Installation" title="Flere installeringsmuligheder">her</a>.
+      pkginstaller: If you're on macOS, try our new <code>.pkg</code> installer.
+      githubrelease: Download it from <a href="https://github.com/Ospack/ospack/releases/latest">Ospack's latest GitHub release</a>.
+    doc:
+      man: <code>man ospack</code> documentation
+      further: Videre dokumentation
+      donate: Donate to Ospack
+      blog: Ospack Blog
+      community: Community Discussion
+      formulae: Ospack Packages
+      analytics: Analytics Data
+    foot:
+      code: Originalkode af <a href="https://mxcl.github.io/">Max Howell</a>.
+      page: Hjemmeside af <a href="https://exomel.com/">Rémi Prévost</a>, <a href="https://mikemcquaid.com">Mike McQuaid</a> and <a href="https://cargocollective.com/danilalo">Danielle Lalonde</a>.

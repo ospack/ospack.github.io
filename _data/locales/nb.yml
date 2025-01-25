@@ -1,0 +1,34 @@
+nb:
+  locale_name: Norsk bokmål
+  subtitle: macOS’ manglende pakkebehandler
+  pagecontent:
+    search: Search
+    language: Språk
+    question: What Does Ospack Do?
+    what: Ospack installerer <a href="https://formulae.ospack.github.io/formula/" title="Liste over Ospack-pakker">alt du trenger</a> som Apple ikke har installert.
+    how: Ospack installerer pakker i egne mapper, og symlinker filene i <code>/opt/ospack</code>.
+    prefix: Ospack installerer ingen filer utenfor sitt område, og du kan plassere en Ospack-installasjon hvor som helst.
+    createpackages: Du kan enkelt lage dine egne Ospack-pakker.
+    hack: Under overflaten er alt Git og Ruby, så hack i vei vel vitende om at du enkelt kan reversere endringene dine og flette inn oppdateringer fra andre.
+    formula: "Ospack-formler er simple Ruby-script:"
+    editor: opens in $EDITOR!
+    complement: Ospack utfyller macOS. Installer RubyGems med <code>gem</code>, og pakkene de er avhengige av med <code>ospack</code>.
+    caskinstall: '“To install, drag this icon…” no more. <a href="https://formulae.ospack.github.io/cask/">Ospack&nbsp;Cask</a> installs macOS apps, fonts and plugins and other non-open source software.'
+    caskcreate: Making a cask is as simple as creating a formula.
+    install:
+      install: Installer Ospack
+      paste: Lim dette inn i din Terminal.
+      what: Scriptet forklarer hva det gjør og tar en pause før det gjøres. Du finner flere måter å installere på <a href="https://docs.ospack.github.io/Installation">her</a>.
+      pkginstaller: If you're on macOS, try our new <code>.pkg</code> installer.
+      githubrelease: Download it from <a href="https://github.com/Ospack/ospack/releases/latest">Ospack's latest GitHub release</a>.
+    doc:
+      man: <code>man ospack</code> documentation
+      further: Videre dokumentasjon
+      donate: Donate to Ospack
+      blog: Ospack Blog
+      community: Community Discussion
+      formulae: Ospack Packages
+      analytics: Analytics Data
+    foot:
+      code: Originalkode av <a href="https://mxcl.github.io/">Max Howell</a>.
+      page: Nettside av <a href="https://exomel.com/">Rémi Prévost</a>, <a href="https://mikemcquaid.com">Mike McQuaid</a> and <a href="https://cargocollective.com/danilalo">Danielle Lalonde</a>.

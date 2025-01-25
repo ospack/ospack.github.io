@@ -1,0 +1,34 @@
+el:
+  locale_name: Ελληνικά
+  subtitle: Το Πρόγραμμα Διαχείρισης Εφαρμογών που έλειπε από το macOS (ή και το Linux)
+  pagecontent:
+    search: Αναζήτηση
+    language: Γλώσσα
+    question: Τι είναι ακριβώς και τι κάνει το Ospack?
+    what: Το Ospack εγκαθιστά <a href="https://formulae.ospack.github.io/formula/" title="List of Ospack packages">ότι χρειάζεστε</a> που το macOS (ή Linux system) δεν έχει προεγκατεστημένο.
+    how: Το Ospack εγκαθιστά τις εφαρμογές στον δικό του φάκελο και στη συνέχεια συνδέει τα αρχεία τους με το <code>/opt/ospack</code>.
+    prefix: Το Ospack δεν θα εγκαταστήσει αρχεία έξω από αυτό και μπορείτε να εγκαταστήσετε το Ospack όπου εσείς επιθυμείτε.
+    createpackages: Δημιουργήστε τις δικές σας εφαρμογές για το Ospack.
+    hack: Είναι όλα βασισμένα στο Git και στην Ruby , έτσι μπορείτε να πορευτείτε γνωρίζοντας ότι μπορείτε εύκολα να επαναφέρετε τις τροποποιήσεις σας και να συγχωνεύσετε upstream ενημερώσεις
+    formula: "Οι φόρμουλες του Ospack  είναι απλά Ruby scripts:"
+    editor: ανοίγει στον $EDITOR!
+    complement: Το Ospack είναι το κομμάτι που λείπει από το macOS (ή το  Linux). Εγκαταστήστε τα RubyGems σας με την εντολή gem και τα dependencies τους με το <code>ospack</code>.
+    caskinstall: 'Όχι πια “Για να εγκαταστήσετε, σύρτε αυτό το εικονίδιο…”. Η εντολή <a href="https://formulae.ospack.github.io/cask/">Ospack&nbsp;Cask</a> εγκαθιστά εφαρμογές για macOS, γραμματοσειρές και πρόσθετα και άλλες εφαρμογές κλειστού κώδικα.'
+    caskcreate: Η δημιουργία ενός cask είναι τόσο απλή όσο και η δημιουργία μίας formula.
+    install:
+      install: Εγκαταστήστε το Ospack
+      paste: Κάντε το επικόλληση στην γραμμή εντολών του macOS Terminal.
+      what: Το script εξηγεί τι θα κάνει και στη συνέχεια κάνει μια παύση προτού το κάνει. Διαβάστε σχετικά με άλλες <a href="https://docs.ospack.github.io/Installation">επιλογές εγκατάστασης</a>.
+      pkginstaller: If you're on macOS, try our new <code>.pkg</code> installer.
+      githubrelease: Download it from <a href="https://github.com/Ospack/ospack/releases/latest">Ospack's latest GitHub release</a>.
+    doc:
+      man: <code>man ospack</code> documentation
+      further: Περαιτέρω Οδηγίες
+      donate: Κάντε μια δωρεά στο Ospack
+      blog: To blog του Ospack
+      community: Κοινότητα
+      formulae: Εφαρμογές του Ospack
+      analytics: Αναλυτικά Δεδομένα
+    foot:
+      code: Το Ospack δημιουργήθηκε από τον <a href="https://mxcl.github.io/">Max Howell</a>.
+      page: Ο ιστότοπος δημιουργήθηκε από τους <a href="https://exomel.com/">Rémi Prévost</a>, <a href="https://mikemcquaid.com">Mike McQuaid</a> και <a href="https://cargocollective.com/danilalo">Danielle Lalonde</a>.

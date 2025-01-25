@@ -1,0 +1,49 @@
+title: Ospack
+description: The Missing Package Manager for macOS (or Linux).
+
+exclude:
+  - bin
+  - CNAME
+  - Gemfile*
+  - Rakefile
+  - README.md
+  - vendor
+
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+feed:
+  path: atom.xml
+
+permalink: :title
+
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: post
+      permalink: :year/:month/:day/:title/
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/ospack-social-card.png
+
+logo: /assets/img/ospack.svg
+
+github:
+  repository_nwo: Ospack/ospack.github.io
+
+forkme_nwo: Ospack/ospack
+
+twitter:
+  username: MacOspack
+
+facebook:
+  publisher: https://www.facebook.com/macospack/
+
+link_rel_me_urls:
+  - https://fosstodon.org/@ospack

@@ -1,0 +1,34 @@
+fi:
+  locale_name: Suomi
+  subtitle: MacOS:n puuttuva pakettienhallintaohjelmisto
+  pagecontent:
+    search: Search
+    language: Kieli
+    question: Mitä Ospack tekee?
+    what: Ospack asentaa <a href="https://formulae.ospack.github.io/formula/" title="List of Ospack packages">kaiken</a> tarvittavan, mitä Apple ei ole toimittanut itse.
+    how: Ospack asentaa paketit omiin kansioihinsa ja linkkaa niiden tiedostot hakemistoon <code>/opt/ospack</code>.
+    prefix: Ospack ei asenna tiedostoja etuliitteensä ulkopuolelle, ja voit valita Ospack’n asennuspaikaksi minkä vain haluamasi kansion.
+    createpackages: Luo triviaalisti omia Ospack-paketteja.
+    hack: Ospack koostuu pelkästään gitistä ja rubysta, joten puukota niin paljon kuin haluat. Voit aina palauttaa koodin muutoksia edeltävään tilaan ja ladata uusimmat päivitykset ylävirrasta.
+    formula: "Ospack’n kaavat ovat yksinkertaisia Ruby-skriptejä:"
+    editor: avautuu editorissa $EDITOR!
+    complement: Ospack täydentää macOS:ää. Asenna gemit <code>gem</code>illä ja niiden riippuvuudet <code>ospack</code>’llä.
+    caskinstall: '“To install, drag this icon…” no more. <a href="https://formulae.ospack.github.io/cask/">Ospack&nbsp;Cask</a> installs macOS apps, fonts and plugins and other non-open source software.'
+    caskcreate: Making a cask is as simple as creating a formula.
+    install:
+      install: Asenna Ospack
+      paste: Liitä tämä komentokehotteeseen.
+      what: Skripti kertoo mitä tekee ja pysähtyy sen jälkeen odottamaan varmistusta. Lisää asennusvaihtoehtoja löytyy <a href="https://docs.ospack.github.io/Installation">täältä</a>.
+      pkginstaller: If you're on macOS, try our new <code>.pkg</code> installer.
+      githubrelease: Download it from <a href="https://github.com/Ospack/ospack/releases/latest">Ospack's latest GitHub release</a>.
+    doc:
+      man: <code>man ospack</code> documentation
+      further: Laajempi dokumentaatio
+      donate: Donate to Ospack
+      blog: Ospack Blog
+      community: Community Discussion
+      formulae: Ospack Packages
+      analytics: Analytics Data
+    foot:
+      code: Alkuperäisen koodin on tehnyt <a href="https://mxcl.github.io/">Max Howell</a>.
+      page: Verkkosivun ovat tehneet <a href="https://exomel.com/">Rémi Prévost</a>, <a href="https://mikemcquaid.com">Mike McQuaid</a> ja <a href="https://cargocollective.com/danilalo">Danielle Lalonde</a>.

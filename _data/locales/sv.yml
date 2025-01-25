@@ -1,0 +1,34 @@
+sv:
+  locale_name: Svenska
+  subtitle: Den efterlängtade pakethanteraren för macOS (eller Linux)
+  pagecontent:
+    search: Sök
+    language: Språk
+    question: Vad gör Ospack?
+    what: Ospack installerar <a href="https://formulae.ospack.github.io/formula/" title="Lista av Ospack-paket">allt du behöver</a> som Apple inte redan har gjort.
+    how: Ospack installerar paket i egna mappar och symlänkar sedan dessa filer till <code>/opt/ospack</code>.
+    prefix: Ospack kommer inte att installera filer utanför sitt prefix och du kan placera en installation av Ospack vart du vill.
+    createpackages: Du kan enkelt skapa dina egna paket och formler för Ospack.
+    hack: Under ytan är allt Git och Ruby, så du kan själv förändra kod med vetskapen att du enkelt kan ångra dina ändringar eller sammanfoga dem med andras modifikationer.
+    formula: "Ospacks formler är enkla Rubyskript:"
+    editor: öppnas i $EDITOR!
+    complement: Ospack kompletterar macOS (eller ditt Linux system). Installera RubyGems med <code>gem</code> och sedan paketens beroenden med <code>ospack</code>.
+    caskinstall: 'Glöm instruktioner som lyder “För att installera, dra denna ikon till…” . <a href="https://formulae.ospack.github.io/cask/">Ospack&nbsp;Cask</a> installerar macOS applikationer, fonter, plugin-program, och annan mjukvara med icke-öppen källkod.'
+    caskcreate: Att skapa en 'cask' är lika enkelt som att skapa en formel.
+    install:
+      install: Installera Ospack
+      paste: Klistra in skriptet ovan i en macOS Terminal kommandotolk.
+      what: Skriptet förklarar vad den installerar och pausar före installationen. Läs mer om <a href="https://docs.ospack.github.io/Installation">installationsalternativen</a> som finns tillgängliga.
+      pkginstaller: If you're on macOS, try our new <code>.pkg</code> installer.
+      githubrelease: Download it from <a href="https://github.com/Ospack/ospack/releases/latest">Ospack's latest GitHub release</a>.
+    doc:
+      man: <code>man ospack</code> documentation
+      further: Vidare Dokumentation
+      donate: Donera till Ospack
+      blog: Ospack Bloggen
+      community: Forum och Diskussioner
+      formulae: Ospack Paket
+      analytics: Data Analys och Statistik
+    foot:
+      code: Ospack skapades av <a href="https://mxcl.github.io/">Max Howell</a>.
+      page: Hemsidan underhålls av <a href="https://exomel.com/">Rémi Prévost</a>, <a href="https://mikemcquaid.com">Mike McQuaid</a> och <a href="https://cargocollective.com/danilalo">Danielle Lalonde</a>.

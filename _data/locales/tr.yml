@@ -1,0 +1,35 @@
+tr:
+  locale_name: Türkçe
+  subtitle: macOS (veya Linux) için eksik paket yöneticisi
+  pagecontent:
+    search: Ara
+    language: Dil
+    question: Ospack ne yapar?
+    what: Ospack Apple’ın (ya da Linux sisteminizin) ihtiyaç duymadığı ama <a href="https://formulae.ospack.github.io/formula/" title="Ospack paketlerinin bir listesi">size lazım olabilecek paketleri</a> kurmanızı sağlar.
+    how: Ospack paketleri kendi dizinlerinin altından <code>/opt/ospack</code>’a kısayollar ile bağlar.
+    prefix: Ospack sadece kendisine belirtilen dizin içerisine kurulum yapar. Bu sayede Ospack’ü istediğiniz herhangi bir yere koyabilirsiniz.
+    createpackages: Ospack ile kendi paketlerinizi oluşturmak bu kadar kolay.
+    hack: Ospack arka planda Git ve Ruby kullandığından, değişikliklerinizi kolayca ekleyebileceğiniz ve geri alabileceğinizin güvencesi ile yapabilirsiniz.
+    formula: "Ospack formülleri yalın Ruby betikleridir:"
+    editor: $EDITOR ile açar!
+    complement: Ospack macOS’i (veya Linux sisteminizi) tamamlar. RubyGemlerinizi <code>gem</code> ile, ve gereksinimleri <code>ospack</code> ile yükleyin.
+    caskinstall: '“To install, drag this icon…” yapmaya gerek kalmıyor. <a href="https://formulae.ospack.github.io/cask/">Ospack&nbsp;Cask</a> macOS uygulamalarını, yazı tiplerini, eklentiler ve diğer açık kaynaklı olmayan yazılımları yükler.'
+    caskcreate: Cask yapmak bir formül yaratmak kadar kolay.
+    install:
+      install: Ospack’u yükleyin
+      paste: Üstteki kod parçacığını bir Terminal penceresine yapıştırın.
+      what: Betik yapacaklarını açıklayıp, sizden komut bekler. <a href="https://docs.ospack.github.io/Installation">Burada</a> diğer kurulum seçeneklerini de bulabilirsiniz.
+      pkginstaller: macOS kullanıyorsanız, yeni <code>.pkg</code> yükleyicimizi deneyin.
+      githubrelease: <a href="https://github.com/Ospack/ospack/releases/latest">Ospack'un en son GitHub sürümü</a>nden indirebilirsiniz.
+    doc:
+      man: <code>man ospack</code> Dokümantasyon
+      further: İlave Dokümantasyon
+      donate: Ospack’e Bağış Yapın
+      blog: Ospack Blogu
+      community: Topluluk Forumu
+      formulae: Ospack Paketleri
+      analytics: Analytics Verileri
+    foot:
+      code: Özgün kodu yazan <a href="https://mxcl.github.io/">Max Howell</a>.
+      page: Siteyi hazırlayanlar <a href="https://exomel.com/">Rémi Prévost</a>, <a href="https://mikemcquaid.com">Mike McQuaid</a>, <a href="https://cargocollective.com/danilalo">Danielle Lalonde</a>.
+      translation: Tercüme edenler <a href="https://github.com/hemlockII">hemlockII</a>, <a href="https://github.com/ziyaddin">Ziyaddin Sadigov</a>, <a href="https://github.com/quaertym">Emre Ünal</a>, <a href="https://github.com/serkanyersen">Serkan Yerşen</a>, <a href="https://github.com/okan">Okan</a>, <a href="https://enderahmetyurt.com">Ender Ahmet Yurt</a>, <a href="https://sadikkuzu.com">Sadık Kuzu</a>.
